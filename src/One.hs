@@ -1,4 +1,5 @@
 module One (
+    dayNo,
     solutionOne,
     solutionTwo
 )
@@ -6,6 +7,8 @@ module One (
 
 import Data.List (sort)
 import Data.List.Split (splitOn)
+
+dayNo = 1
 
 solutionOne :: [String] -> Int
 solutionOne = maximum . elves
