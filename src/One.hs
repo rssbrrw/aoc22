@@ -7,14 +7,13 @@ module One (
 import Data.List (sort)
 import Data.List.Split (splitOn)
 
-solutionOne :: String -> Int
-solutionOne input = maximum $ mapSum input
+solutionOne :: [String] -> Int
+solutionOne = maximum . elves
     
-solutionTwo :: String -> Int
-solutionTwo input = sum $ take 3 $ reverse $ sort $ mapSum input
+solutionTwo :: [String] -> Int
+solutionTwo = sum . take 3 . reverse . sort . elves
 
-readAll :: [String] -> [Int]
-readAll xs = map (\x -> read x :: Int) xs
-
-mapSum :: String -> [Int]
-mapSum input = map sum $ map readAll $ splitOn [""] $ splitOn "\n" input
+elves :: [String] -> [Int]
+elves input = map sum sacks
+    where
+        sacks = map (map read) $ splitOn [""] input

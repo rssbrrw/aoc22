@@ -4,6 +4,6 @@ import One
 
 main :: IO ()
 main = do
-    input <- readFile "input.txt"
+    input <- lines <$> readFile "input.txt"
     print $ solutionOne input
     print $ solutionTwo input
