@@ -6,12 +6,12 @@ cabal-version: 1.12
 
 name:           aoc22
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/aoc22#readme>
-homepage:       https://github.com/githubuser/aoc22#readme
-bug-reports:    https://github.com/githubuser/aoc22/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2022 Author name here
+description:    Please see the README on GitHub at <https://github.com/rssbrrw/aoc22#readme>
+homepage:       https://github.com/rssbrrw/aoc22#readme
+bug-reports:    https://github.com/rssbrrw/aoc22/issues
+author:         rssbrrw
+maintainer:     rssbrrw@gmail.com
+copyright:      2022 rssbrrw
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -21,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/aoc22
+  location: https://github.com/rssbrrw/aoc22
 
 library
   exposed-modules:
