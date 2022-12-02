@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       One
+      Two
   other-modules:
       Paths_aoc22
   hs-source-dirs:

@@ -3,7 +3,7 @@
 Day | Challenge | Solution(s)
 --- | --- | ---
 1 | [Calorie Counting](https://adventofcode.com/2022/day/1) | [Haskell](https://github.com/rssbrrw/aoc22/blob/main/src/One.hs) |
-2 | | |
+2 | [Rock Paper Scissors](https://adventofcode.com/2022/day/2)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/src/Two.hs) |
 3 | | |
 4 | | |
 5 | | |

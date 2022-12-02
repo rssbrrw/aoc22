@@ -1,10 +1,9 @@
 module Main (main) where
 
-
-import One
+import Two
 
 main :: IO ()
 main = do
-    input <- lines <$> readFile ("input" ++ show dayNo ++ ".txt")
+    input <- lines <$> readFile ("inputs/" ++ show dayNo ++ ".txt")
     print $ solutionOne input
     print $ solutionTwo input
