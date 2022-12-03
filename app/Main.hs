@@ -1,6 +1,6 @@
 module Main (main) where
 
-import Two
+import Three
 
 main :: IO ()
 main = do
