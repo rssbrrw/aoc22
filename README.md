@@ -1,5 +1,14 @@
 # :christmas_tree::calendar: [Advent of Code 2022](https://adventofcode.com/2022) :calendar::christmas_tree:
 
+To run the solution for a particular day e.g.
+```
+# Day 1
+$ stack run 01
+
+# Day 10
+$ stack run 10
+```
+
 Day | Challenge | Solution(s)
 --- | --- | ---
 1 | [Calorie Counting](https://adventofcode.com/2022/day/1) | [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/01/Main.hs) |
