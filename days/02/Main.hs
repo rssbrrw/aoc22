@@ -1,12 +1,22 @@
-module Two (
-    dayNo,
-    solutionOne,
-    solutionTwo
-) where
+module Main (main) where
 
-import Data.List.Split
+import Data.List.Split (splitOn)
 
-dayNo = 2
+import Lib
+
+main = runDay partOne partTwo
+
+partOne input = sum $ map roundScore rounds
+    where
+        rounds = map (\[x, y] -> (parseThrow x, parseThrow y)) $ map (splitOn " ") input
+
+partTwo input = sum $ map roundScore idealGame
+    where
+        idealGame      = zip oppThrows requiredThrows
+        oppThrows      = map fst rounds
+        results        = map snd rounds
+        requiredThrows = map requiredThrow $ zip oppThrows results
+        rounds = map (\[x, y] -> (parseThrow x, parseResult y)) $ map (splitOn " ") input
 
 data Throw  = Rock | Paper | Scissors deriving Eq
 instance Ord Throw where
@@ -16,20 +26,6 @@ instance Ord Throw where
     _        > _        = False
 
 data Result = Win  | Lose  | Draw
-
-solutionOne :: [String] -> Int
-solutionOne input = sum $ map roundScore rounds
-    where
-        rounds = map (\[x, y] -> (parseThrow x, parseThrow y)) $ map (splitOn " ") input
-
-solutionTwo :: [String] -> Int
-solutionTwo input = sum $ map roundScore idealGame
-    where
-        idealGame      = zip oppThrows requiredThrows
-        oppThrows      = map fst rounds
-        results        = map snd rounds
-        requiredThrows = map requiredThrow $ zip oppThrows results
-        rounds = map (\[x, y] -> (parseThrow x, parseResult y)) $ map (splitOn " ") input
 
 roundScore :: (Throw, Throw) -> Int
 roundScore (oppThrow, myThrow) = myScore + resultScore
