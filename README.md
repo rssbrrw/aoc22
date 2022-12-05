@@ -15,7 +15,7 @@ Day | Challenge | Solution(s)
 2 | [Rock Paper Scissors](https://adventofcode.com/2022/day/2)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/02/Main.hs) |
 3 | [Rucksack Reorganization](https://adventofcode.com/2022/day/3)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/03/Main.hs) |
 4 | [Camp Cleanup](https://adventofcode.com/2022/day/4)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/04/Main.hs) |
-5 | | |
+5 | [Supply Stacks](https://adventofcode.com/2022/day/5)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/05/Main.hs) |
 6 | | |
 7 | | |
 8 | | |
