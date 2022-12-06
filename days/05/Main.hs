@@ -14,14 +14,15 @@ partOne = map head . moveCrates reverse
 partTwo = map head . moveCrates id
 
 moveCrates op input = toList $ foldl (move op) (crates input) (moves input)
-    where moves  = map (map read)
-                 . map ((\[_,x,_,y,_,z] -> [x,y,z]) . (splitOn " "))
-                 . filter (isPrefixOf "move")
-          crates = S.fromList
-                 . filter (not . null)
-                 . map (filter isAlpha)
-                 . transpose
-                 . filter (isPrefixOf "[")
-
-move op crates [x, y, z] = S.adjust' (drop x) (y-1) $ S.adjust' (taken++) (z-1) crates
-    where taken = op $ take x (S.index crates (y-1))
+      where
+          move op crates [count, from, to] =
+              S.adjust' (drop count) (from-1) $ S.adjust' (taken++) (to-1) crates
+              where taken = op $ take count $  S.index crates (from-1)
+          moves = 
+              map (map read) .
+              map ((\[_,x,_,y,_,z] -> [x,y,z]) . (splitOn " ")) .
+              filter (isPrefixOf "move")
+          crates =
+              S.fromList . filter (not . null) .
+              map (filter isAlpha) . transpose .
+              filter (isPrefixOf "[")
