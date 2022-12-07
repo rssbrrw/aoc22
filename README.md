@@ -17,7 +17,7 @@ Day | Challenge | Solution(s)
 4 | [Camp Cleanup](https://adventofcode.com/2022/day/4)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/04/Main.hs) |
 5 | [Supply Stacks](https://adventofcode.com/2022/day/5)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/05/Main.hs) |
 6 | [Tuning Trouble](https://adventofcode.com/2022/day/6)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/06/Main.hs) |
-7 | | |
+7 | [No Space Left On Device](https://adventofcode.com/2022/day/7)| [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/07/Main.hs) |
 8 | | |
 9 | | |
 10 | | |
