@@ -21,9 +21,8 @@ Day | Challenge | Solution(s)
 8 | [Treetop Tree House](https://adventofcode.com/2022/day/8) | [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/08/Main.hs) |
 9 | [Rope Bridge](https://adventofcode.com/2022/day/9) | [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/09/Main.hs) |
 10 | [Cathode-Ray Tube](https://adventofcode.com/2022/day/10) | [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/10/Main.hs) |
-10 | | |
 11 | | |
-12 | | |
+12 | [Hill Climbing Algorithm](https://adventofcode.com/2022/day/12) | [Haskell](https://github.com/rssbrrw/aoc22/blob/main/days/12/Main.hs) |
 13 | | |
 14 | | |
 15 | | |
